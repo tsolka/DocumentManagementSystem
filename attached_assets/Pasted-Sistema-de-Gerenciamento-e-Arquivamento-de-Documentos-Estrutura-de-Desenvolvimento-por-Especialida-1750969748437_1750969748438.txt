@@ -1,0 +1,207 @@
+Sistema de Gerenciamento e Arquivamento de Documentos - Estrutura de Desenvolvimento por Especialidades
+1. Arquiteto de Sistema
+Prompt:
+"Você é um arquiteto de sistemas sênior especializado em soluções de gerenciamento documental. Projete a arquitetura completa de um sistema de arquivamento de documentos com os seguintes requisitos:
+
+Requisitos Funcionais:
+
+Suporte para múltiplos formatos (PDF, JPEG, PNG, documentos Office)
+Interface web para upload e cadastro com metadados
+Processamento OCR assíncrono
+Sistema de busca com indexação otimizada
+Visualização in-browser de documentos
+Download de arquivos originais
+Requisitos Não-Funcionais:
+
+Alta performance para grandes volumes
+Escalabilidade horizontal
+Segurança e controle de acesso
+Backup e recuperação
+Entregáveis:
+
+Diagrama de arquitetura completo (componentes e fluxos)
+Stack tecnológico recomendado com justificativas
+Padrões de design e melhores práticas
+Estratégia de microserviços vs monolito
+Plano de escalabilidade e performance"
+2. Desenvolvedor Frontend/UX
+Prompt:
+"Você é um desenvolvedor frontend sênior e especialista em UX. Desenvolva a interface de usuário para um sistema de gerenciamento documental com duas telas principais:
+
+Tela 1 - Upload e Cadastro:
+
+Design responsivo e intuitivo
+Drag-and-drop para múltiplos arquivos
+Formulário com campos: título, descrição, assunto, tags, data, categoria, departamento
+Preview de arquivos antes do upload
+Indicadores de progresso
+Validações client-side
+Tela 2 - Busca e Visualização:
+
+Interface de busca avançada com filtros
+Resultados em grid/lista com paginação
+Preview de documentos inline
+Visualizador de documentos integrado
+Botões de ação (download, editar metadados, compartilhar)
+Entregáveis:
+
+Wireframes e mockups
+Código frontend (React/Vue/Angular)
+Sistema de componentes reutilizáveis
+Testes de interface
+Documentação de componentes"
+3. Desenvolvedor Backend
+Prompt:
+"Você é um desenvolvedor backend sênior. Implemente a API REST para um sistema de gerenciamento documental com:
+
+Funcionalidades Core:
+
+Endpoints para upload de arquivos com validação
+CRUD de metadados
+Sistema de filas para processamento assíncrono
+API de busca com filtros complexos
+Gerenciamento de sessões e autenticação
+Integração com serviços de OCR
+Extração de texto de documentos Office
+Requisitos Técnicos:
+
+RESTful API com documentação OpenAPI
+Autenticação JWT
+Rate limiting
+Logging estruturado
+Tratamento de erros padronizado
+Testes unitários e de integração
+Entregáveis:
+
+Código da API (Python/Node.js/Java)
+Documentação da API
+Testes automatizados
+Scripts de migração
+Configuração de CI/CD"
+4. Especialista em Banco de Dados
+Prompt:
+"Você é um DBA especialista em sistemas de grande escala. Projete e implemente a estrutura de dados para um sistema de arquivamento documental:
+
+Requisitos de Armazenamento:
+
+Suporte para milhões de documentos
+Armazenamento de arquivos binários (até 100MB cada)
+Metadados estruturados e texto extraído
+Indexação full-text para busca rápida
+Backup incremental
+Análise Necessária:
+
+Comparação entre PostgreSQL, MongoDB, e Elasticsearch
+Estratégia de particionamento
+Índices otimizados para busca
+Armazenamento de objetos (S3/MinIO)
+Entregáveis:
+
+Modelo de dados completo
+Scripts DDL
+Estratégia de indexação
+Plano de backup e recovery
+Documentação de otimizações"
+5. Especialista em OCR e Processamento
+Prompt:
+"Você é um especialista em processamento de documentos e OCR. Implemente um sistema de extração de texto:
+
+Requisitos de Processamento:
+
+OCR para imagens e PDFs escaneados
+Extração de texto de PDFs nativos
+Parsing de documentos Office (docx, xlsx, pptx)
+Detecção de idioma
+Correção ortográfica pós-OCR
+Extração de metadados embarcados
+Análise de Ferramentas:
+
+Tesseract vs EasyOCR vs PaddleOCR
+Apache Tika para documentos Office
+Bibliotecas de processamento de PDF
+Entregáveis:
+
+Pipeline de processamento
+Benchmarks de ferramentas OCR
+Código de integração
+Estratégia de paralelização
+Métricas de qualidade"
+6. Engenheiro DevOps
+Prompt:
+"Você é um engenheiro DevOps sênior. Configure a infraestrutura completa para deployment em Ubuntu Server 22.04:
+
+Requisitos de Infraestrutura:
+
+Servidor web (Nginx)
+Runtime da aplicação
+Banco de dados
+Sistema de filas
+Monitoramento
+SSL/TLS
+Especificações de Hardware:
+
+Recomendações de CPU/RAM/Storage
+Configuração RAID
+Requisitos de rede
+Scripts Automatizados:
+
+install.sh - Instalação completa com:
+
+Dependências do sistema
+Runtime e frameworks
+Banco de dados
+Configurações de segurança
+startup.sh - Inicialização com:
+
+Serviços systemd
+Health checks
+Auto-restart
+Logs rotation
+Entregáveis:
+
+Scripts de instalação automatizada
+Arquivos de configuração
+Docker/Docker Compose (opcional)
+Documentação de deployment
+Playbooks Ansible"
+7. Technical Writer
+Prompt:
+"Você é um technical writer especializado em documentação de sistemas. Crie a documentação completa:
+
+Documentação Necessária:
+
+Manual de Instalação:
+
+Pré-requisitos
+Passo a passo com screenshots
+Troubleshooting comum
+Manual do Usuário:
+
+Guia de início rápido
+Funcionalidades detalhadas
+FAQs
+Manual do Administrador:
+
+Configurações avançadas
+Backup e manutenção
+Monitoramento
+Documentação Técnica:
+
+Arquitetura do sistema
+APIs
+Estrutura de código
+Entregáveis:
+
+Documentação em Markdown
+Diagramas e fluxogramas
+Vídeos tutoriais (roteiros)
+Quick reference cards
+Changelog e roadmap"
+Coordenação do Projeto
+
+Pontos de Integração:
+Daily standups entre especialistas
+Code reviews cruzados
+Testes de integração contínuos
+Documentação incremental
+Este formato permite que cada especialista trabalhe com foco em sua área, mantendo a coesão do projeto através de especificações claras e pontos de integração bem definidos.
